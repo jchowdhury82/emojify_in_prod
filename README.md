@@ -27,6 +27,11 @@ Output = i love being lazy ❤️!
 Input = This is so miserable
 Output = This is so miserable 😞!
 
+
+### Prerequisites
+
+This needs Glove embedding file glove6b50dtxt which is available in kaggle. https://www.kaggle.com/watts2/glove6b50dtxt
+
 ### Design of Model
 
 1. An input sentence is converted to an embedding vector using Glove embedding.
