@@ -1,6 +1,6 @@
-FROM python:latest
-WORKDIR /project_emojify
-COPY . /project_emojify
+FROM python:3.6-slim-buster
+MAINTAINER joyjitchowdhury
+WORKDIR /emojify
+COPY . /emojify
 RUN pip3 install -r requirements.txt
-EXPOSE 3000
-CMD ["python","./emojify_dockeflask.py"]
+CMD ["python","emojify_flask.py"]

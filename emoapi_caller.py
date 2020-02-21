@@ -1,7 +1,7 @@
 # API Tester
 import requests
 
-url = 'http://127.0.0.1:5000/emoapi'
+url = 'http://0.0.0.0:5000/emoapi'
 params = {'input_sentence': 'i hate you'}
 
 try:
