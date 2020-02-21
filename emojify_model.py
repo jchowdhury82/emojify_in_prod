@@ -1,21 +1,22 @@
 # File with functions to train / test model
 # Using Keras for LSTM based emotion determination
 
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import numpy as np
-
-from keras.models import Model
-from keras.layers import Dense, Input, Dropout, LSTM, Activation
-from keras.layers.embeddings import Embedding
-
-
 import sys
 import emoji
 import csv
 import config
+import os
+
+
+from keras.models import Model
+from keras.layers import Dense, Input, Dropout, LSTM, Activation
+from keras.layers.embeddings import Embedding
 from keras.models import model_from_json
+
+
+
 
 #We are using just 5 emojis
 emoji_dictionary = {"0": "\u2764\uFE0F",  # :heart: prints a black instead of red heart depending on the font
