@@ -53,14 +53,16 @@ Model building and training is in the file emojify_lstm_train.py
 
 ### Directory structure
 
+
 ./emojify
-   /models
+
+    /models
         model_metadata.json     # stores the keras model metadata
         model_weights.h5        # stores weights 
-   /data
+    /data
         data files              # any train/test data files required for testing should be under this folder
         glove embed files       # glove embedding file (zipped)
-   /templates
+    /templates
         input.html              # html form for testing from ui
     
 
